@@ -1,0 +1,53 @@
+
+Gurobi 9.5.2 (win64) logging started Wed Aug 31 21:27:16 2022
+
+Set parameter LogFile to value "CHU-01.log"
+Set parameter Heuristics to value 0
+Set parameter FlowCoverCuts to value 1
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (win64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 131 rows, 90 columns and 440 nonzeros
+Model fingerprint: 0x6bb0cc31
+Variable types: 0 continuous, 90 integer (70 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [2e+00, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+Loaded user MIP start with objective 32.9137
+
+Presolve removed 45 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 86 rows, 85 columns, 380 nonzeros
+Variable types: 0 continuous, 85 integer (70 binary)
+
+Root relaxation: objective 1.894150e+01, 47 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   18.94150    0   35   32.91368   18.94150  42.5%     -    0s
+     0     0   20.18292    0   34   32.91368   20.18292  38.7%     -    0s
+     0     0   20.21598    0   36   32.91368   20.21598  38.6%     -    0s
+H    0     0                      22.5550848   20.21598  10.4%     -    0s
+     0     0   22.44797    0   38   22.55508   22.44797  0.47%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 1
+  Implied bound: 4
+  Clique: 3
+  MIR: 8
+  Inf proof: 2
+  Zero half: 1
+  RLT: 11
+  Relax-and-lift: 2
+
+Explored 1 nodes (98 simplex iterations) in 0.04 seconds (0.01 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 2: 22.5551 32.9137 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.255508482497e+01, best bound 2.255508482497e+01, gap 0.0000%
